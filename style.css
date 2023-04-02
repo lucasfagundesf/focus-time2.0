@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+:root{
+    --font-timer: 'Roboto', sans-serif;
+    --font-color: #323238;
+    --bg-color: #FFFFFF; 
+    --card-bg-color: #E1E1E6;
+    --card-bg-hover-color: #02799D;
+    --card-fill-hover-color: #FFFFFF;
+    --card-icon-fill-color: #323238;
+}
+.dark-mode:root{
+    --font-timer: 'Roboto', sans-serif;
+    --font-color: #FFFFFF;
+    --bg-color: #121214;
+    --card-bg-color: #29292E;
+    --card-bg-hover-color: #0A3442;
+    --card-fill-hover-color: #FFFFFF;
+    --card-icon-fill-color: #C4C4CC;          
+}
+.hide{
+    display: none;
+}
+
+main{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-items: center;
+}
+.time{
+    margin-bottom: 1.7rem;
+}
+span{
+    font-family: var(--font-timer);
+    color: var(--font-color);
+
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+}
+button{
+    background: none;
+    border: none;
+}
+.buttons{
+   display: flex;
+   gap: 4rem; 
+}
+button path{
+    fill: var(--card-icon-fill-color);
+}
+.buttons button:hover path{
+    fill: var(--card-bg-hover-color);
+}
+.music{
+    display: grid;
+    grid-template-areas: 
+    "a b" 
+    "c d";
+    gap: 3.2rem;
+}
+.card{
+    background: var(--card-bg-color);
+    border-radius: 2.4rem;
+    padding: 4.2rem;
+}
+.selected, .selected path{
+    background-color: var(--card-bg-hover-color);
+    fill: var(--card-fill-hover-color);
+}
+.card:hover{
+    background-color: var(--card-bg-hover-color);
+    
+}
+.card:hover path{
+    fill: var(--card-fill-hover-color);
+}
+.buttonLight, .buttonDark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 6rem;
+}
+
