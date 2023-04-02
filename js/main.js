@@ -40,16 +40,16 @@ function clickOnPlay(){
     sound.pressButton()
 }
 function clickOnStop(){
-    controls.reset()
-    timer.reset()
+    // controls.reset()
+    // timer.reset()
     sound.pressButton()
 }
 function clickOnPlus(){
-    timer.plus()
+    // timer.plus()
     sound.pressButton()
 }
 function clickOnMinus(){
-    timer.minus()
+    // timer.minus()
     sound.pressButton()
 }
 function clickOnFlorest(){
