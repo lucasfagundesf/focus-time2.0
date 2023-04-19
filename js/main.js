@@ -17,10 +17,7 @@ import {
     cardRain
 } from "./elements.js"
 
-// const controls = Controls({
-//     buttonPlay,
-//     buttonStop
-// })
+
 const timer = Timer({
     minutesDisplay,
     secondsDisplay,
@@ -46,12 +43,10 @@ function changeTheme() {
     buttonDark.classList.toggle('hide');
 }
 function clickOnPlay(){
-    //  controls.play()
     timer.countdown()
     sound.pressButton()
 }
 function clickOnStop(){
-    // controls.stop()
     timer.reset()
     sound.pressButton()
 }
@@ -82,7 +77,4 @@ function clickOnCoffeeShop(){
 function clickOnFirePlace(){
     cardFirePlace.classList.toggle('selected')
     sound.firePlace()
-}
-function changeTimer(){
-    let newMinutes = c
 }
