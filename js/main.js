@@ -1,3 +1,5 @@
+import Timer from "./timer.js"
+// import Controls from "./controls.js"
 import Sounds from "./sounds.js"
 import {
     html,
@@ -15,6 +17,15 @@ import {
     cardRain
 } from "./elements.js"
 
+// const controls = Controls({
+//     buttonPlay,
+//     buttonStop
+// })
+const timer = Timer({
+    minutesDisplay,
+    secondsDisplay,
+    
+})
 const sound = Sounds()
 // Events
 buttonLight.addEventListener('click', changeTheme)
@@ -35,26 +46,30 @@ function changeTheme() {
     buttonDark.classList.toggle('hide');
 }
 function clickOnPlay(){
-    // controls.play()
-    // timer.countdown()
+    //  controls.play()
+    timer.countdown()
     sound.pressButton()
 }
 function clickOnStop(){
-    // controls.reset()
-    // timer.reset()
+    // controls.stop()
+    timer.reset()
     sound.pressButton()
 }
 function clickOnPlus(){
-    // timer.plus()
+    timer.plus()
     sound.pressButton()
 }
 function clickOnMinus(){
-    // timer.minus()
+    timer.minus()
     sound.pressButton()
 }
 function clickOnFlorest(){
     cardFlorest.classList.toggle('selected')
-    sound.florest()
+    if(cardFlorest.classList.contains('selected')){
+        sound.florest()
+    }else{
+        sound.florest()
+    }
 }
 function clickOnRain(){
     cardRain.classList.toggle('selected')
@@ -67,4 +82,7 @@ function clickOnCoffeeShop(){
 function clickOnFirePlace(){
     cardFirePlace.classList.toggle('selected')
     sound.firePlace()
+}
+function changeTimer(){
+    let newMinutes = c
 }
