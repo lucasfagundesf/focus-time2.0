@@ -90,3 +90,55 @@ button path{
     margin: 6rem;
 }
 
+@media (max-width: 768px){
+    .buttonLight,.buttonDark {
+       position: absolute;
+       margin: 1rem;
+
+       text-align: center;
+    }
+    main {
+        margin-top: 5rem;
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+    }
+    .timer {
+        margin-top: 5rem;
+    }
+    .time{
+        margin: auto;
+        width: 20rem;
+        text-align: center;
+    }
+    span {
+        font-size: 7rem;
+    }
+    .buttons {
+        align-items: center;
+        justify-content: center ;
+        width: 30rem;
+        gap: 2rem;
+    }
+    .buttons > button> svg {
+        width: 5rem;
+    }
+    .music {
+        margin-top: 5rem;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        width: 30rem;
+        gap: 4rem;
+    }
+    .card {
+        padding: 3rem 4rem;
+    }
+    .music > button > svg {
+        margin: 0;
+        padding: 0;
+        width: 3rem;
+        
+    }
+}
